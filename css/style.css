@@ -1,0 +1,73 @@
+#bg-rect {
+  position: absolute;
+  width: 514px;
+  height: 511px;
+  left: 349px;
+  top: 126px;
+}
+
+#bg-large-circle{
+  position: absolute;
+  left: 0%;
+  right: 28.38%;
+  top: 0%;
+  bottom: 0%;
+  background: rgba(244, 206, 94, 0.39);
+}
+
+#logo{
+  position: absolute;
+  width: 325px;
+  height: 46.83px;
+  left: 38px;
+  top: 48px;
+  background:url(../assets/logo-lowe.png);
+  background-size: 100% //图片太大，需要设置以适应容器大小
+}
+
+#cover-line{
+  position: absolute;
+  left: 35.68%;
+  right: 0%;
+  top: 29.44%;
+  bottom: 33.33%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 52px;
+  /* or 100% */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+#cover-btn{
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  left: 902px;
+  top: 683px;
+  background: rgba(244, 206, 94, 0.39);
+}
+
+#cover-btn-text{
+  position: absolute;
+  width: 99px;
+  height: 63px;
+  left: 963px;
+  top: 714px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  /* or 111% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
