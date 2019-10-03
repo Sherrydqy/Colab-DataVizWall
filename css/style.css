@@ -1,4 +1,4 @@
-#bg-rect {
+.bg-rect {
   position: absolute;
   width: 514px;
   height: 511px;
@@ -6,31 +6,25 @@
   top: 126px;
 }
 
-#bg-large-circle{
+.cover-large-circle{
   position: absolute;
-  left: 0%;
-  right: 28.38%;
-  top: 0%;
-  bottom: 0%;
-  background: rgba(244, 206, 94, 0.39);
+  left: 218px;
+  top: 210px;
 }
 
-#logo{
+.logo{
   position: absolute;
-  width: 325px;
-  height: 46.83px;
-  left: 38px;
-  top: 48px;
-  background:url(../assets/logo-lowe.png);
-  background-size: 100% //图片太大，需要设置以适应容器大小
+  width: 168.53px;
+  height: 54px;
+  left: 45.71px;
+  top: 92.6px;
 }
 
-#cover-line{
+.cover-line{
   position: absolute;
-  left: 35.68%;
-  right: 0%;
-  top: 29.44%;
-  bottom: 33.33%;
+  left: 487px;
+  top: 369px;
+
 
   font-family: Montserrat;
   font-style: normal;
@@ -42,32 +36,259 @@
   text-transform: uppercase;
 
   color: #000000;
-}
 
-#cover-btn{
+}
+.cover-btn{
   position: absolute;
-  width: 122px;
+  width: 160px;
   height: 122px;
   left: 902px;
-  top: 683px;
-  background: rgba(244, 206, 94, 0.39);
+  top: 631px;
+  cursor: pointer;
 }
 
-#cover-btn-text{
+.cover-btn-text{
   position: absolute;
   width: 99px;
   height: 63px;
   left: 963px;
-  top: 714px;
+  top: 662px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
+  cursor: pointer;
   /* or 111% */
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: #000000;
+}
 
+.txt-cloud{
+  position: absolute;
+  width: 1334px;
+  height: 760px;
+  left: 343px;
+  top: 169px;
+  overflow-x: scroll;
+}
+
+.nav-side{
+  position: absolute;
+  width: 291px;
+  height: 762px;
+  left: 0px;
+  top: 51px;
+
+  background: #E8EEF1;
+  opacity: 0.9;
+}
+
+/* Explore by */
+
+.explore{
+position: absolute;
+width: 223px;
+height: 61px;
+left: 46px;
+top: 216px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 27px;
+/* or 112% */
+
+text-transform: uppercase;
+
+color: #000000;
+}
+
+
+/* Artifacts */
+
+.artifacts{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 296px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+/* Geography */
+
+.geo{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 350px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+line-height: 33px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #EF5E0C;
+}
+
+
+/* Religion */
+
+.religion{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 404px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+/* Color */
+
+.color{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 458px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+/* Medium */
+
+.medium{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 512px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+/* Mood */
+
+.mood{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 566px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+/* Size */
+
+.size{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 620px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+/* Year */
+
+.year{
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 674px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
+}
+
+
+.surpriseme {
+position: absolute;
+width: 221px;
+height: 37px;
+left: 48px;
+top: 729px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #3F6B78;
 }
