@@ -1,3 +1,17 @@
+h2{
+  font-size: 22px;
+  color: white;
+  z-index:100;
+  line-height: 1;
+}
+h4{
+  font-size: 13px;
+  color: white;
+  z-index:100;
+  line-height: 7px;
+}
+
+
 .bg-rect {
   position: absolute;
   width: 514px;
@@ -5,7 +19,19 @@
   left: 349px;
   top: 126px;
 }
+#nav-left{
 
+  transition: all 2s ease;
+-moz-transition: all 2s ease; /* Firefox 4 */
+-webkit-transition: all 2s ease; /* Safari 和 Chrome */
+-o-transition: all 2s ease; /* Opera */
+}
+#nav-right{
+  transition: all 2s ease;
+-moz-transition: all 2s ease; /* Firefox 4 */
+-webkit-transition: all 2s ease; /* Safari 和 Chrome */
+-o-transition: all 2s ease; /* Opera */
+}
 .cover-large-circle{
   position: absolute;
   left: 218px;
@@ -26,7 +52,7 @@
   top: 369px;
 
 
-  font-family: Montserrat;
+  font-family:'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 52px;
@@ -53,7 +79,7 @@
   height: 63px;
   left: 963px;
   top: 662px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -71,10 +97,19 @@
   width: 1334px;
   height: 760px;
   left: 343px;
-  top: 169px;
+  top: 10px;
   overflow-x: scroll;
 }
-
+.year-histogram{
+  position: absolute;
+  width: 1334px;
+  height: 760px;
+  left: 343px;
+  top: 10px;
+  right: 10px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
 .nav-side{
   position: absolute;
   width: 291px;
@@ -94,8 +129,7 @@ width: 223px;
 height: 61px;
 left: 46px;
 top: 216px;
-
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -117,7 +151,7 @@ height: 37px;
 left: 48px;
 top: 296px;
 
-font-family: Montserrat;
+font-family: "Montserrat", sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -128,7 +162,9 @@ text-transform: uppercase;
 color: #3F6B78;
 }
 
-
+.y-axis-year{
+  font-size: 58px;
+}
 /* Geography */
 
 .geo{
@@ -138,7 +174,7 @@ height: 37px;
 left: 48px;
 top: 350px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 27px;
@@ -159,7 +195,7 @@ height: 37px;
 left: 48px;
 top: 404px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -180,7 +216,7 @@ height: 37px;
 left: 48px;
 top: 458px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -201,7 +237,7 @@ height: 37px;
 left: 48px;
 top: 512px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -221,7 +257,7 @@ height: 37px;
 left: 48px;
 top: 566px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -242,7 +278,7 @@ height: 37px;
 left: 48px;
 top: 620px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -263,7 +299,7 @@ height: 37px;
 left: 48px;
 top: 674px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -282,13 +318,112 @@ height: 37px;
 left: 48px;
 top: 729px;
 
-font-family: Montserrat;
+font-family:'Montserrat', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 29px;
 letter-spacing: 0.01em;
 text-transform: uppercase;
-
 color: #3F6B78;
+}
+
+/*   SlideShow   */
+.oneSlideBg{
+  cursor:grabbing;
+  background-color: black;
+  width: 200px;
+  height:60%;
+  margin-top: 8%;
+  border-style: solid;
+  border-width:50px;
+  border-color: rgba(90, 90, 90, 0.8);
+}
+
+.slides{
+  position:relative;
+  width:100%;
+  height:450px;
+  background-color:rgba(70, 70, 70, 70.6);
+}
+.slideInfo{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  margin-left: 53%;
+  margin-right:3%;
+  margin-top: 4%;
+  z-index: 100;
+}
+.slideInfoOther{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+
+  z-index: 100;
+}
+
+.slideImg{
+  width: 380px;
+  height: 400px;
+  float:left;
+  z-index: 100;
+    position: relative;
+    left:70px;
+    top:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.lightboxBg{
+  position:absolute;
+  visibility:hidden;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  margin:0 auto;
+  background-color: rgb(0,0,0,0.4);
+}
+
+.lightBox{
+  position:absolute;
+  width:60%;
+  height:60%;
+  margin-left:20%;
+  margin-top: 8%;
+  background-color: rgb(0,0,0,1);
+}
+.lightboxPic{
+  position: absolute;
+  width:60%;
+  height:60%;
+  margin-top:6%;
+  margin-left: 5%;
+  margin-right: 50%;
+  fill: url("#pic-1-1");
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width:380px;
+    height:380px;
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+
+.slideTitle{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+#jssor_1{
+  position:absoulte;
+
+  z-index:100;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.6);
 }

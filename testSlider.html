@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lowe Art Museum: Data Visualization Wall</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="./js/testSlider.js"></script>
+    <script src="../library/infinite-canvas.js"></script>
+    <script src="../library/jssor.slider.my.js"></script>
+
+  </head>
+  <body>
+   <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+
+  <div id="jssor_1">
+    <!-- Loading Screen -->
+    <div id="slides" class="slides" data-u="slides">
+      <div class="oneSlideBg">
+        <div id="img1" class="slideImg">
+        </div>
+        <div id="slideInfo" class="slideInfo">
+          <h2 id="slideTitle" class="slideTitle">Title  </h2>
+          <h4>&nbsp</h4>
+          <div class="slideInfoOther">
+            <h4>ARTIST/slideInfoMaker</h4>
+            <h4 id="slideInfoMaker"><strong>ARTIST/slideInfoMaker</strong></h4>
+            <h4>&nbsp</h4>
+            <h4>DATE</h4>
+            <h4 id="slideInfoDate">Date</h4>
+            <h4>&nbsp</h4>
+            <h4>MEDUIM</h4>
+            <h4 id="slideInfoMedium">Medium</h4>
+            <h4>&nbsp</h4>
+            <h4>DIMENSIONS</h4>
+            <h4 id="slideInfoDimension">Dimension</h4>
+          </div>
+      </div>
+
+      </div>
+        <div class="oneSlideBg ">
+          <div id="img2" class="slideImg">
+          </div>
+          <div id="slideInfo" class="slideInfo">
+            <h2 id="slideTitle" class="slideTitle">Title  </h2>
+            <h4>&nbsp</h4>
+            <div class="slideInfoOther">
+              <h4>ARTIST/slideInfoMaker</h4>
+              <h4 id="slideInfoMaker"><strong>ARTIST/slideInfoMaker</strong></h4>
+              <h4>&nbsp</h4>
+              <h4>DATE</h4>
+              <h4 id="slideInfoDate">Date</h4>
+              <h4>&nbsp</h4>
+              <h4>MEDUIM</h4>
+              <h4 id="slideInfoMedium">Medium</h4>
+              <h4>&nbsp</h4>
+              <h4>DIMENSIONS</h4>
+              <h4 id="slideInfoDimension">Dimension</h4>
+            </div>
+        </div>
+
+        </div>
+        <div class="oneSlideBg ">
+          <div id="img2" class="slideImg">
+          </div>
+          <div id="slideInfo" class="slideInfo">
+          <h2 id="slideTitle" class="slideTitle">  </h2>
+          <br>
+          <div class="slideInfoOther">
+            <h4>ARTIST/slideInfoMaker</h4>
+            <h4 id="slideInfoMaker"><strong>ARTIST/slideInfoMaker</strong></h4>
+            <br>
+            <h4>DATE</h4>
+            <h4 id="slideInfoDate">Date</h4>
+            <br>
+            <h4>MEDUIM</h4>
+            <h4 id="slideInfoMedium">Medium</h4>
+            <br>
+            <h4>DIMENSIONS</h4>
+            <h4 id="slideInfoDimension">Dimension</h4>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div><a data-u="any" href="https://www.jssor.com" style="display:none">animation</a>
+
+    <!-- Bullet Navigator -->
+
+    <!-- Arrow Navigator -->
+  <script type="text/javascript">
+    jssor_1_slider_init();
+
+  </script>
+  </body>
